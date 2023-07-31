@@ -3,8 +3,10 @@
 
 <head>
     <meta charset=utf-8>
+    <link href="/Tennis_scores/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
@@ -12,26 +14,39 @@
 </head>
 
 <body>
-    <h1>Hunter is the best for sure</h1>
     <div class="container">
+        <h1>Tennis scores</h1>
         <div class="row">
             <div class="col-lg-6">
-                <label for="playerAInput">Player A</label>
-                <select name="playerAInput">
-                    <option>Hunter</option>
-                    <option>Ben</option>
-                    <option>Jack</option>
-                    <option>Yianni</option>
-                </select>
-                <label for="playerBInput">Player B</label>
-                <select name="playerBInput">
+
+                <h4>Select players</h4>
+            </div>
+            <div class="col-lg-6">
+                <label for="player1">Player 1</label>
+                <select name="player1">
                     <option>Hunter</option>
                     <option>Ben</option>
                     <option>Jack</option>
                     <option>Yianni</option>
                 </select>
             </div>
-
+            <div class="col-lg-6">
+                <label for="player2">Player 2</label>
+                <select name="player2">
+                    <option>Hunter</option>
+                    <option>Ben</option>
+                    <option>Jack</option>
+                    <option>Yianni</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <label type="text" class="form-control" placeholder="Recipient's username">Add set</label>
+                    <button id="addSet" class="input-group-text" id="basic-addon2">+</button>
+                </div>
+            </div>
         </div>
     </div>
 
